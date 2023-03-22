@@ -12,7 +12,13 @@ def encode(password):
             result += "2"
     print(f'"{password}" will become "{result}" after encoding')
 
-
+def password_decoder(password):
+    decoded_password = ""
+    for digit in password:
+        # Convert the digit to an integer, add 3, and take the remainder divided by 10
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_password += decoded_digit
+    return decoded_password
 
 if __name__ == '__main__':
     password =""
