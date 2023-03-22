@@ -30,7 +30,7 @@ if __name__ == '__main__':
             password = encode(password)
             print("Your password has been encoded and stored!")
         if selection == 2:
-            decode_pass = decode(password)
+            decode_pass = password_decoder(password)
             print(f"The encoded password is {password}, and the original password is {decode_pass}")
         if selection == 3:
             quit()
