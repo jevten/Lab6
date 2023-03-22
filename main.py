@@ -13,6 +13,7 @@ def encode(password):
     print(f'"{password}" will become "{result}" after encoding')
 
 
+
 if __name__ == '__main__':
     password =""
     while True:
